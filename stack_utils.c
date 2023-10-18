@@ -30,7 +30,7 @@ stack_t *add_nodeint_end(stack_t **h, const int n)
 
 
 /**
- * stack_free - frees stack
+ * stack_free - frees the stack
  * @head: The head of the stack
  */
 void stack_free(stack_t *head)
@@ -49,7 +49,7 @@ void stack_free(stack_t *head)
 }
 
 /**
- * len_stack - return stack len
+ * len_stack - return the stack's len
  * @head: the giving stack
  * Return: the length of the stack
  */
@@ -70,7 +70,7 @@ int len_stack(stack_t *head)
  * queue_node_add - adds a node at the end of a queue
  * @h: a pointer to the top of a stack
  * @n: the integer to be added
- * Return: a pointer to the new node
+ * Return: pointer to the new node
  */
 stack_t *queue_node_add(stack_t **h, const int n)
 {
