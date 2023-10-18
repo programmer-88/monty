@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * push - pushes an integer to stack
+ * push - pushes an int to stack
  * @stack: The stack
  * @line_number: The line number
  */
@@ -18,7 +18,7 @@ void push(stack_t **stack, unsigned int line_number)
 
 /**
  * pall - prints all the values on the stack, starting from
- * the top of the stack.
+ * top of the stack.
  * @stack: The stack
  * @line_number: The line number
  */
@@ -41,7 +41,7 @@ void pall(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pint - prints the value of the top elmt of the stack
+ * pint - prints the value of the top value of the stack
  * @stack: the giving stack
  * @line_number: the line number
  */
@@ -81,7 +81,7 @@ void pop(stack_t **stack, unsigned int line_number)
 
 
 /**
- * swap - swaps the top two elements of the stack
+ * swap - swaps the top 2 value of the stack
  * @stack: a pointer the the first element of the stack
  * @line_number: the line number
  */

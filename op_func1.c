@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * add - adds the two top elements of the stack
+ * add - adds the 2 top elements of the stack
  * @stack: a pointer to the first node of the stack
  * @line_number: the line number
  */
@@ -24,7 +24,7 @@ void add(stack_t **stack, unsigned int line_number)
 
 
 /**
- * nop - doesn't do anything
+ * nop - does not do anything
  * @stack: a pointer to the first node of the stack
  * @line_number: the line number
  */
@@ -58,7 +58,7 @@ void sub(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * div - divides the two top elements of the stack
+ * div - divides the 2 top elements of the stack
  * @stack: a pointer to the first node of the stack
  * @line_number: the line number
  */
@@ -82,7 +82,7 @@ void div(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * mul - multiplies the two top elements of the stack
+ * mul - multiplies the 2 top values of the stack
  * @stack: a pointer to the first node of the stack
  * @line_number: the line number
  */
