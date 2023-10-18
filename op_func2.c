@@ -2,8 +2,8 @@
 
 /**
  * mod - computes the rest of the division of the two top
- * elements of the stack
- * @stack: a pointer to the first node of the stack
+ * elements of  stack
+ * @stack: a pointer to the first node of stack
  * @line_number: the line number
  */
 
@@ -27,7 +27,7 @@ void mod(stack_t **stack, unsigned int line_number)
 
 
 /**
- * pchar - prints the char at the top of the stack, followed by a new line.
+ * pchar - prints the char at the top of a stack, followed by a \n.
  * @stack: a pointer to the first node of the stack
  * @line_number: the line number
  */

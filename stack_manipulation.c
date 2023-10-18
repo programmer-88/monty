@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * add_nodeint_end - adds a new node the end of the stack
+ * add_nodeint_end - adds a new node the end of a stack
  * @h: the head of the stack
  * @n: the node data
  * Return: The address of the new node
@@ -30,7 +30,7 @@ stack_t *add_nodeint_end(stack_t **h, const int n)
 
 
 /**
- * stack_free - frees the stack
+ * stack_free - frees stack
  * @head: The head of the stack
  */
 void stack_free(stack_t *head)
@@ -49,7 +49,7 @@ void stack_free(stack_t *head)
 }
 
 /**
- * len_stack - return stack length
+ * len_stack - return stack len
  * @head: the giving stack
  * Return: the length of the stack
  */

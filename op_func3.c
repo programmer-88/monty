@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * stack - sets the format of the data to a stack (LIFO)
+ * stack - sets the format of the data to a stack LIFO
  * @stack: an pointer to the first node of the stack
  * @line_number: The line number
  */
@@ -14,7 +14,7 @@ void stack(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * queue - sets the format of the data to a queue (FIFO)
+ * queue - sets the format of the data to a queue FIFO
  * @stack: an pointer to the first node of the stack
  * @line_number: the line number
  */
