@@ -24,24 +24,24 @@ void add(stack_t **stack, unsigned int line_number)
 
 
 /**
- * _nop - doesn't do anything
+ * nop - doesn't do anything
  * @stack: a pointer to the first node of the stack
  * @line_number: the line number
  */
 
-void _nop(stack_t **stack, unsigned int line_number)
+void nop(stack_t **stack, unsigned int line_number)
 {
 	(void)stack;
 	(void)line_number;
 }
 
 /**
- * _sub - subtracts the two top elements of the stack
+ * sub - subtracts the two top elements of the stack
  * @stack: a pointer to the first node of the stack
  * @line_number: the line number
  */
 
-void _sub(stack_t **stack, unsigned int line_number)
+void sub(stack_t **stack, unsigned int line_number)
 {
 	stack_t *current;
 
