@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * monty_interpreter - read monty instructions line to line
+ * exec_interpr - read monty instructions line to line
  * @stack: the stack
  */
 void exec_interpr(stack_t **stack)
@@ -28,9 +28,9 @@ void exec_interpr(stack_t **stack)
 		if (!g_info.opcode || g_info.opcode[0] == '#')
 			continue;
 
-		p_func = get_op_func(g_info.opcode);
+		p_func = op_func_get(g_info.opcode);
 		if (!p_func)
-			op_error_bis(6, *stack, g_info.opcode, line_count);
+			op_error_fail(6, *stack, g_info.opcode, line_count);
 
 		p_func(stack, line_count);
 	}

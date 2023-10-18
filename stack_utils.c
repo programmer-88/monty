@@ -12,7 +12,7 @@ stack_t *add_nodeint_end(stack_t **h, const int n)
 
 	new = malloc(sizeof(stack_t));
 	if (new == NULL)
-		op_error(1, *h, g_info.opcode);
+		op_err(1, *h, g_info.opcode);
 	new->n = n;
 	new->next = NULL;
 	new->prev = NULL;

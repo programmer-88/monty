@@ -19,7 +19,7 @@ int main(int ac, char **av)
 	if (!g_info.file)
 		global_err(2, av[1]);
 
-	monty_interpreter(&stack);
+	exec_interpr(&stack);
 
 	fclose(g_info.file);
 	return (0);

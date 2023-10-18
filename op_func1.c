@@ -58,18 +58,18 @@ void sub(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * div - divides the 2 top elements of the stack
+ * div_ - divides the 2 top elements of the stack
  * @stack: a pointer to the first node of the stack
  * @line_number: the line number
  */
 
-void div(stack_t **stack, unsigned int line_number)
+void div_(stack_t **stack, unsigned int line_number)
 {
 	stack_t *current;
 
 
 	if (len_stack(*stack) < 2)
-		op_error(5, *stack, g_info.opcode, line_number);
+		op_err(5, *stack, g_info.opcode, line_number);
 
 	current = *stack;
 

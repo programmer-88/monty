@@ -67,7 +67,7 @@ void op_err(int error_code, ...)
 		default:
 			break;
 	}
-	free_all(stack);
+	all_free(stack);
 	exit(EXIT_FAILURE);
 }
 
@@ -103,6 +103,6 @@ void op_error_fail(int error_code, ...)
 		default:
 			break;
 	}
-	free_all(stack);
+	all_free(stack);
 	exit(EXIT_FAILURE);
 }

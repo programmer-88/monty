@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * get_op_func - gets operation function
+ * op_func_get - gets operation function
  * @opcode: the operation code
  * Return: Return the associate function, or NULL if not found
  */
@@ -16,7 +16,7 @@ void (*op_func_get(char *opcode))(stack_t **stack, unsigned int line_number)
 		{"add", add},
 		{"nop", nop},
 		{"sub", sub},
-		{"div", div},
+		{"div", div_},
 		{"mul", mul},
 		{"mod", mod},
 		{"pchar", pchar},
