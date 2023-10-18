@@ -49,11 +49,11 @@ void stack_free(stack_t *head)
 }
 
 /**
- * stack_len - return stack length
+ * len_stack - return stack length
  * @head: the giving stack
  * Return: the length of the stack
  */
-int stack_len(stack_t *head)
+int len_stack(stack_t *head)
 {
 	stack_t *tmp = head;
 	int len = 0;

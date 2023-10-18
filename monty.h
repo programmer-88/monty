@@ -65,7 +65,7 @@ void pall(stack_t **stack, unsigned int line_number);
 int is_digit(char *str);
 stack_t *add_nodeint_end(stack_t **h, const int n);
 void stack_free(stack_t *head);
-int stack_len(stack_t *head);
+int len_stack(stack_t *head);
 void _pint(stack_t **stack, unsigned int line_number);
 void _pop(stack_t **stack, unsigned int line_number);
 void _swap(stack_t **stack, unsigned int line_number);

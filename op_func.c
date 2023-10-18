@@ -90,7 +90,7 @@ void _swap(stack_t **stack, unsigned int line_number)
 	stack_t *current;
 	int tmp = 0;
 
-	if (stack_len(*stack) < 2)
+	if (len_stack(*stack) < 2)
 		op_error(5, *stack, g_info.opcode, line_number);
 
 	current = *stack;

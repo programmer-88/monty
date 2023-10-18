@@ -12,7 +12,7 @@ void _mod(stack_t **stack, unsigned int line_number)
 	stack_t *current;
 
 
-	if (stack_len(*stack) < 2)
+	if (len_stack(*stack) < 2)
 		op_error(5, *stack, g_info.opcode, line_number);
 
 	current = *stack;
@@ -83,7 +83,7 @@ void _rotl(stack_t **stack, unsigned int line_number)
 	stack_t *current, *tmp;
 
 	(void)line_number;
-	if (!stack || !(*stack) || stack_len(*stack) == 1)
+	if (!stack || !(*stack) || len_stack(*stack) == 1)
 		return;
 
 	tmp = *stack;
@@ -110,7 +110,7 @@ void _rotr(stack_t **stack, unsigned int line_number)
 	stack_t *current;
 
 	(void)line_number;
-	if (!stack || !(*stack) || stack_len(*stack) == 1)
+	if (!stack || !(*stack) || len_stack(*stack) == 1)
 		return;
 
 	current = *stack;

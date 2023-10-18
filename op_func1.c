@@ -11,7 +11,7 @@ void _add(stack_t **stack, unsigned int line_number)
 	stack_t *current;
 
 
-	if (stack_len(*stack) < 2)
+	if (len_stack(*stack) < 2)
 		op_error(5, *stack, g_info.opcode, line_number);
 
 	current = *stack;
@@ -46,7 +46,7 @@ void _sub(stack_t **stack, unsigned int line_number)
 	stack_t *current;
 
 
-	if (stack_len(*stack) < 2)
+	if (len_stack(*stack) < 2)
 		op_error(5, *stack, g_info.opcode, line_number);
 
 	current = *stack;
@@ -68,7 +68,7 @@ void _div(stack_t **stack, unsigned int line_number)
 	stack_t *current;
 
 
-	if (stack_len(*stack) < 2)
+	if (len_stack(*stack) < 2)
 		op_error(5, *stack, g_info.opcode, line_number);
 
 	current = *stack;
@@ -92,7 +92,7 @@ void _mul(stack_t **stack, unsigned int line_number)
 	stack_t *current;
 
 
-	if (stack_len(*stack) < 2)
+	if (len_stack(*stack) < 2)
 		op_error(5, *stack, g_info.opcode, line_number);
 
 	current = *stack;
