@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * monty_interpreter - read monty instructions line by line
+ * monty_interpreter - read monty instructions line to line
  * @stack: the stack
  */
 void exec_interpr(stack_t **stack)
@@ -37,7 +37,7 @@ void exec_interpr(stack_t **stack)
 }
 
 /**
- * all_free - free alocated memory & stack
+ * all_free - free alocated memory and stack
  * @stack: the stack
  */
 void all_free(stack_t *stack)
@@ -48,7 +48,7 @@ void all_free(stack_t *stack)
 }
 
 /**
- * ln_parser - parser a line
+ * ln_parser - parses a line
  */
 void ln_parser(void)
 {
@@ -59,7 +59,7 @@ void ln_parser(void)
 }
 
 /**
- * is_digit - checks if a string is a number
+ * is_digit - checks if a string is a digit
  * @str: the string
  * Return: 0 on success, and 1 otherwise
  */

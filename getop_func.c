@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * get_op_func - get operation function
+ * get_op_func - gets operation function
  * @opcode: the operation code
  * Return: Return the associate function, or NULL if not found
  */

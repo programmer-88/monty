@@ -3,7 +3,7 @@
 global_info g_info;
 
 /**
- * main - entry point
+ * main - entry point of program
  * @ac: argument count
  * @av: argument vector
  * Return: 0 on success, and 1 on failure

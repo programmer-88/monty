@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * global_err - prints global error and exit with EXIT_FAILURE
+ * global_err - prints global err and exit with EXIT_FAILURE
  * @error_code: the error number
  */
 
@@ -28,7 +28,7 @@ void global_err(int error_code, ...)
 }
 
 /**
- * op_err - prints operation error ans exit with EXIT_FAILURE
+ * op_err - prints operation error answer exit with EXIT_FAILURE
  * @error_code: the error code
  */
 
@@ -72,7 +72,7 @@ void op_err(int error_code, ...)
 }
 
 /**
- * op_error_fail - prints operation error and exit with EXIT_FAILURE
+ * op_error_fail - prints operation err and exit upon EXIT_FAILURE
  * @error_code: the error code
  */
 
