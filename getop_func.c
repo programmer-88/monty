@@ -8,8 +8,8 @@
 void (*op_func_get(char *opcode))(stack_t **stack, unsigned int line_number)
 {
 	instruction_t ops[] = {
-		{"push", _push},
-		{"pall", _pall},
+		{"push", push},
+		{"pall", pall},
 		{"pint", _pint},
 		{"pop", _pop},
 		{"swap", _swap},

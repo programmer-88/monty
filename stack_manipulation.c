@@ -30,10 +30,10 @@ stack_t *add_nodeint_end(stack_t **h, const int n)
 
 
 /**
- * free_stack - frees the stack
+ * stack_free - frees the stack
  * @head: The head of the stack
  */
-void free_stack(stack_t *head)
+void stack_free(stack_t *head)
 {
 	stack_t *current = head;
 

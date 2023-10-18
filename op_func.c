@@ -7,7 +7,7 @@
  */
 void push(stack_t **stack, unsigned int line_number)
 {
-	if (!g_info.arg || is_number(g_info.arg) == 1)
+	if (!g_info.arg || is_digit(g_info.arg) == 1)
 		op_error(2, *stack, g_info.opcode, line_number);
 
 	if (g_info.lifo)
@@ -17,12 +17,12 @@ void push(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * _pall - prints all the values on the stack, starting from
+ * pall - prints all the values on the stack, starting from
  * the top of the stack.
  * @stack: The stack
  * @line_number: The line number
  */
-void _pall(stack_t **stack, unsigned int line_number)
+void pall(stack_t **stack, unsigned int line_number)
 {
 	stack_t *current;
 

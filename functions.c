@@ -42,7 +42,7 @@ void exec_interpr(stack_t **stack)
  */
 void all_free(stack_t *stack)
 {
-	free_stack(stack);
+	stack_free(stack);
 	free(g_info.line);
 	fclose(g_info.file);
 }
@@ -59,11 +59,11 @@ void ln_parser(void)
 }
 
 /**
- * is_number - checks if a string is a number
+ * is_digit - checks if a string is a number
  * @str: the string
  * Return: 0 on success, and 1 otherwise
  */
-int is_number(char *str)
+int is_digit(char *str)
 {
 	int i = 0;
 
