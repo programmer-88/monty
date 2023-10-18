@@ -13,7 +13,7 @@ void push(stack_t **stack, unsigned int line_number)
 	if (g_info.lifo)
 		add_nodeint_end(stack, atoi(g_info.arg));
 	else
-		add_node_queue(stack, atoi(g_info.arg));
+		queue_node_add(stack, atoi(g_info.arg));
 }
 
 /**

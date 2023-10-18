@@ -67,12 +67,12 @@ int len_stack(stack_t *head)
 }
 
 /**
- * add_node_queue - adds a node at the end of a queue
+ * queue_node_add - adds a node at the end of a queue
  * @h: a pointer to the top of a stack
  * @n: the integer to be added
  * Return: a pointer to the new node
  */
-stack_t *add_node_queue(stack_t **h, const int n)
+stack_t *queue_node_add(stack_t **h, const int n)
 {
 	stack_t *new, *current;
 

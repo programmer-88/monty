@@ -81,7 +81,7 @@ void rotl(stack_t **stack, unsigned int line_number);
 void rotr(stack_t **stack, unsigned int line_number);
 void queue(stack_t **stack, unsigned int line_number);
 void stack(stack_t **stack, unsigned int line_number);
-stack_t *add_node_queue(stack_t **h, const int n);
+stack_t *queue_node_add(stack_t **h, const int n);
 
 /*   Error functions  */
 void global_error(int error_code, ...);
