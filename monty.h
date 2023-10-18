@@ -14,6 +14,7 @@
  * @line: Pointer to the current line
  * @opcode: the opcode
  * @arg: the opcode argument
+ * @lifo: last in first out
  */
 typedef struct global_info_s
 {
