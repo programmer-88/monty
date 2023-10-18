@@ -1,11 +1,11 @@
 #include "monty.h"
 
 /**
- * global_error - prints global error and exit with EXIT_FAILURE
+ * global_err - prints global error and exit with EXIT_FAILURE
  * @error_code: the error number
  */
 
-void global_error(int error_code, ...)
+void global_err(int error_code, ...)
 {
 	va_list args;
 
@@ -28,11 +28,11 @@ void global_error(int error_code, ...)
 }
 
 /**
- * op_error - prints operation error ans exit with EXIT_FAILURE
+ * op_err - prints operation error ans exit with EXIT_FAILURE
  * @error_code: the error code
  */
 
-void op_error(int error_code, ...)
+void op_err(int error_code, ...)
 {
 	va_list args;
 	stack_t *stack = NULL;
@@ -72,11 +72,11 @@ void op_error(int error_code, ...)
 }
 
 /**
- * op_error_bis - prints operation error and exit with EXIT_FAILURE
+ * op_error_fail - prints operation error and exit with EXIT_FAILURE
  * @error_code: the error code
  */
 
-void op_error_bis(int error_code, ...)
+void op_error_fail(int error_code, ...)
 {
 	va_list args;
 	stack_t *stack = NULL;

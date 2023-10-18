@@ -8,7 +8,7 @@
 void push(stack_t **stack, unsigned int line_number)
 {
 	if (!g_info.arg || is_digit(g_info.arg) == 1)
-		op_error(2, *stack, g_info.opcode, line_number);
+		op_err(2, *stack, g_info.opcode, line_number);
 
 	if (g_info.lifo)
 		add_nodeint_end(stack, atoi(g_info.arg));
@@ -51,7 +51,7 @@ void pint(stack_t **stack, unsigned int line_number)
 	stack_t *current;
 
 	if (stack == NULL || *stack == NULL)
-		op_error(3, *stack, g_info.opcode, line_number);
+		op_err(3, *stack, g_info.opcode, line_number);
 
 	current = *stack;
 
@@ -69,7 +69,7 @@ void pop(stack_t **stack, unsigned int line_number)
 	stack_t *current;
 
 	if (stack == NULL || *stack == NULL)
-		op_error(4, *stack, g_info.opcode, line_number);
+		op_err(4, *stack, g_info.opcode, line_number);
 
 	current = *stack;
 
@@ -91,7 +91,7 @@ void swap(stack_t **stack, unsigned int line_number)
 	int tmp = 0;
 
 	if (len_stack(*stack) < 2)
-		op_error(5, *stack, g_info.opcode, line_number);
+		op_err(5, *stack, g_info.opcode, line_number);
 
 	current = *stack;
 

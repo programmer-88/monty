@@ -78,7 +78,7 @@ stack_t *queue_node_add(stack_t **h, const int n)
 
 	new = malloc(sizeof(stack_t));
 	if (new == NULL)
-		op_error(1, *h);
+		op_err(1, *h);
 	new->n = n;
 	new->next = NULL;
 

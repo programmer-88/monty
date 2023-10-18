@@ -84,7 +84,7 @@ void stack(stack_t **stack, unsigned int line_number);
 stack_t *queue_node_add(stack_t **h, const int n);
 
 /*   Error functions  */
-void global_error(int error_code, ...);
-void op_error(int error_code, ...);
-void op_error_bis(int error_code, ...);
+void global_err(int error_code, ...);
+void op_err(int error_code, ...);
+void op_error_fail(int error_code, ...);
 #endif

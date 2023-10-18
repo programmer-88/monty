@@ -13,13 +13,13 @@ void mod(stack_t **stack, unsigned int line_number)
 
 
 	if (len_stack(*stack) < 2)
-		op_error(5, *stack, g_info.opcode, line_number);
+		op_err(5, *stack, g_info.opcode, line_number);
 
 	current = *stack;
 
 	*stack = current->next;
 	if (current->n == 0)
-		op_error_bis(7, *stack, g_info.opcode, line_number);
+		op_error_fail(7, *stack, g_info.opcode, line_number);
 	(*stack)->n = (*stack)->n % current->n;
 	(*stack)->prev = NULL;
 	free(current);
@@ -36,14 +36,14 @@ void pchar(stack_t **stack, unsigned int line_number)
 	stack_t *current;
 
 	if (!stack || !(*stack))
-		op_error(3, *stack, g_info.opcode, line_number);
+		op_err(3, *stack, g_info.opcode, line_number);
 
 	current = *stack;
 
 	if (current->n >= 0  && current->n <= 127)
 		printf("%c\n", current->n);
 	else
-		op_error_bis(8, *stack, g_info.opcode, line_number);
+		op_error_fail(8, *stack, g_info.opcode, line_number);
 }
 
 /**
