@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
- * _mod - computes the rest of the division of the two top
+ * mod - computes the rest of the division of the two top
  * elements of the stack
  * @stack: a pointer to the first node of the stack
  * @line_number: the line number
  */
 
-void _mod(stack_t **stack, unsigned int line_number)
+void mod(stack_t **stack, unsigned int line_number)
 {
 	stack_t *current;
 
@@ -27,11 +27,11 @@ void _mod(stack_t **stack, unsigned int line_number)
 
 
 /**
- * _pchar - prints the char at the top of the stack, followed by a new line.
+ * pchar - prints the char at the top of the stack, followed by a new line.
  * @stack: a pointer to the first node of the stack
  * @line_number: the line number
  */
-void _pchar(stack_t **stack, unsigned int line_number)
+void pchar(stack_t **stack, unsigned int line_number)
 {
 	stack_t *current;
 
@@ -47,11 +47,11 @@ void _pchar(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * _pstr - prints the string starting at the top of the stack
+ * pstr - prints the string starting at the top of the stack
  * @stack: a pointer to the first node of the stack
  * @line_number: the line number
  */
-void _pstr(stack_t **stack, unsigned int line_number)
+void pstr(stack_t **stack, unsigned int line_number)
 {
 	stack_t *current;
 
@@ -73,12 +73,12 @@ void _pstr(stack_t **stack, unsigned int line_number)
 
 
 /**
- * _rotl - rotates the stack to the top
+ * rotl - rotates the stack to the top
  * @stack: a pointer to the first node of the stack
  * @line_number: the line number
  */
 
-void _rotl(stack_t **stack, unsigned int line_number)
+void rotl(stack_t **stack, unsigned int line_number)
 {
 	stack_t *current, *tmp;
 
@@ -100,12 +100,12 @@ void _rotl(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * _rotr - rotates the stack to the bottom.
+ * rotr - rotates the stack to the bottom.
  * @stack: a pointer to the first node of the stack
  * @line_number: the line number
  */
 
-void _rotr(stack_t **stack, unsigned int line_number)
+void rotr(stack_t **stack, unsigned int line_number)
 {
 	stack_t *current;
 

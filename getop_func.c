@@ -18,13 +18,13 @@ void (*op_func_get(char *opcode))(stack_t **stack, unsigned int line_number)
 		{"sub", sub},
 		{"div", div},
 		{"mul", mul},
-		{"mod", _mod},
-		{"pchar", _pchar},
-		{"pstr", _pstr},
-		{"rotl", _rotl},
-		{"rotr", _rotr},
-		{"stack", _stack},
-		{"queue", _queue},
+		{"mod", mod},
+		{"pchar", pchar},
+		{"pstr", pstr},
+		{"rotl", rotl},
+		{"rotr", rotr},
+		{"stack", stack},
+		{"queue", queue},
 		{NULL, NULL}
 	};
 	int i = 0;

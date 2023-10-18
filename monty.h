@@ -74,13 +74,13 @@ void nop(stack_t **stack, unsigned int line_number);
 void sub(stack_t **stack, unsigned int line_number);
 void div(stack_t **stack, unsigned int line_number);
 void mul(stack_t **stack, unsigned int line_number);
-void _mod(stack_t **stack, unsigned int line_number);
-void _pchar(stack_t **stack, unsigned int line_number);
-void _pstr(stack_t **stack, unsigned int line_number);
-void _rotl(stack_t **stack, unsigned int line_number);
-void _rotr(stack_t **stack, unsigned int line_number);
-void _queue(stack_t **stack, unsigned int line_number);
-void _stack(stack_t **stack, unsigned int line_number);
+void mod(stack_t **stack, unsigned int line_number);
+void pchar(stack_t **stack, unsigned int line_number);
+void pstr(stack_t **stack, unsigned int line_number);
+void rotl(stack_t **stack, unsigned int line_number);
+void rotr(stack_t **stack, unsigned int line_number);
+void queue(stack_t **stack, unsigned int line_number);
+void stack(stack_t **stack, unsigned int line_number);
 stack_t *add_node_queue(stack_t **h, const int n);
 
 /*   Error functions  */
