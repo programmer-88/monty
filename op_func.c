@@ -41,12 +41,12 @@ void pall(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * _pint - prints the value of the top elmt of the stack
+ * pint - prints the value of the top elmt of the stack
  * @stack: the giving stack
  * @line_number: the line number
  */
 
-void _pint(stack_t **stack, unsigned int line_number)
+void pint(stack_t **stack, unsigned int line_number)
 {
 	stack_t *current;
 
@@ -59,12 +59,12 @@ void _pint(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * _pop - removes the top element of the stack
+ * pop - removes the top element of the stack
  * @stack: a pointer to the first node of the stack
  * @line_number: the line number
  */
 
-void _pop(stack_t **stack, unsigned int line_number)
+void pop(stack_t **stack, unsigned int line_number)
 {
 	stack_t *current;
 
@@ -81,11 +81,11 @@ void _pop(stack_t **stack, unsigned int line_number)
 
 
 /**
- * _swap - swaps the top two elements of the stack
+ * swap - swaps the top two elements of the stack
  * @stack: a pointer the the first element of the stack
  * @line_number: the line number
  */
-void _swap(stack_t **stack, unsigned int line_number)
+void swap(stack_t **stack, unsigned int line_number)
 {
 	stack_t *current;
 	int tmp = 0;

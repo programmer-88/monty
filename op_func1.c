@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * _add - adds the two top elements of the stack
+ * add - adds the two top elements of the stack
  * @stack: a pointer to the first node of the stack
  * @line_number: the line number
  */
 
-void _add(stack_t **stack, unsigned int line_number)
+void add(stack_t **stack, unsigned int line_number)
 {
 	stack_t *current;
 
